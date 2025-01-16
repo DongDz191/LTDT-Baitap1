@@ -15,6 +15,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
+
             android:label="@string/app_name"
             android:theme="@style/Theme.Baitap01">
             <intent-filter>
@@ -28,13 +29,13 @@
             android:name=".PrimeActivity"
             android:exported="true"
             android:label="Số nguyên tố"
-            android:theme="@style/Theme.AppCompat.Light">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
 
         <activity
             android:name=".NumberActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

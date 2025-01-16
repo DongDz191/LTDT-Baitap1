@@ -1,6 +1,7 @@
 package com.example.baitap01
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -25,7 +26,12 @@ class PrimeActivity : AppCompatActivity() {
 
                 resultText.text = "Các số nguyên tố: ${primeNumbers.joinToString(", ")}"
 
+                primeNumbers.forEach {
+                    Log.d("PrimeNumbers", "$it là số nguyên tố")
+                }
+
                 Toast.makeText(this, "Các số nguyên tố đã được hiển thị", Toast.LENGTH_SHORT).show()
+
             } else {
                 Toast.makeText(this, "Vui lòng nhập các số", Toast.LENGTH_SHORT).show()
             }
